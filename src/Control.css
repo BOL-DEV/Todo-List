@@ -1,0 +1,80 @@
+.control {
+  display: flex;
+  font-size: 0.7rem;
+  padding: 1rem;
+  justify-content: space-between;
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+  background: hsl(235, 24%, 19%);
+  border-radius: 5px;
+}
+
+.control.light-mode {
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+  box-shadow: -1px 1px 20px -10px #444;
+}
+
+.number-items {
+  opacity: 0.5;
+}
+
+.number-items:hover {
+  opacity: 1;
+}
+
+.all {
+  color: blue;
+  font-weight: 900;
+  opacity: 0.5;
+}
+
+.all:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.active:hover {
+  opacity: 1;
+}
+
+.complete {
+  opacity: 0.5;
+}
+
+.complete:hover {
+  opacity: 1;
+}
+
+.clear {
+  opacity: 0.5;
+}
+
+.clear:hover {
+  opacity: 1;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .flex {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    background-color: hsl(235, 24%, 19%);
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  .flex.light-mode {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 24%, 19%);
+    box-shadow: -1px 1px 20px -10px #444;
+  }
+}
